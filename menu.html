@@ -1,0 +1,576 @@
+<!--
+   New Perspectives on HTML and CSS
+   Final Project
+
+   Pyro Pizza Shop
+   Author: Brodie Davis
+   Date:   6/20/2017
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Pizza For Pyros</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+  <meta charset="UTF-8"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+<header>
+  <img src="images/headerpic.jpg">
+
+  <div class="navbar">
+    <div class="wrap">
+      <div class="navbar-nav">
+        <ul>
+          <li class="navbar-item"><a href="index.html">HOME</a></li>
+          <li class="navbar-item active"><a href="menu.html">MENU</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+          <li><a class="navbar-slogan">"THE LOCAL PLACE WITH THE BEST TASTE"</a></li>
+        </ul>
+      </div>
+
+      <div style="clear: both"></div>
+    </div>
+  </div>
+</header>
+
+<!--Start Content-->
+<div id="content-wrapper">
+  <!-- Buttons -->
+  <center>
+    <br>
+    <a class="prev" onclick="plusSlides(-1)">Back</a>
+    <a class="next" onclick="plusSlides(1)">Next</a>
+  </center>
+
+  <!-- Specialty Pizza Menu -->
+  <div class="slide fade">
+    <h1 class="title text-center">SPECIALTY PIZZA'S</h1>
+    <img src="images/specialpizza.jpg">
+
+    <div class="menu-item">
+      <table align="center" class="price-table">
+        <tr>
+          <td class="text-center">Small</td>
+          <td  class="text-center">$10.79</td>
+        </tr>
+        <tr>
+          <td class="text-center">Medium</td>
+          <td class="text-center">$13.79</td>
+        </tr>
+        <tr>
+          <td class="text-center">Large</td>
+          <td class="text-center">$16.79</td>
+        </tr>
+      </table>
+      <h4 class="text-center title"><u>Thin Or Original Crust</u></h4>
+
+      <table>
+        <tr>
+          <td>Chicken Alfredo pizza</td>
+          <td> Alfredo sauce, blended cheeses, chicken, (spinach optional)</td>
+        </tr>
+
+        <tr>
+          <td>Pot Roast Pizza</td>
+          <td> Special sauce, roast beef, french fries, blend of cheeses</td>
+        </tr>
+
+        <tr>
+          <td>Chicken Bacon Ranch pizza</td>
+          <td> Chicken tenders, bacon, ranch, cheese</td>
+        </tr>
+
+        <tr>
+          <td>Chicken Broccoli pizza</td>
+          <td> Chicken tenders, broccoli, cheese, ranch dressing</td>
+        </tr>
+
+        <tr>
+          <td>Lasagna pizza</td>
+          <td> Meatballs, sauce, ricotta & mozzarella cheese</td>
+        </tr>
+
+        <tr>
+          <td>Chicken Gold pizza</td>
+          <td> Chicken tenders, cheddar, mozzarella cheese, hot honey mustard sauce</td>
+        </tr>
+
+        <tr>
+          <td>Meat Lovers pizza</td>
+          <td> Pepperoni, bacon, sausage, meatballs, ham</td>
+        </tr>
+
+        <tr>
+          <td>Philly Steak pizza</td>
+          <td> Blend of cheeses, beef steak, green peppers, onions</td>
+        </tr>
+
+        <tr>
+          <td>Chicken Wing</td>
+          <td> Chicken tenders, cheddar, mozzarella, hot sauce</td>
+        </tr>
+
+        <tr>
+          <td>Taco pizza</td>
+          <td> A Mexican delight! Our seasoned taco meat, cheddar & mozzarella, fresh tomato, onion, lettuce.
+            (Sour cream & Jalapenos..extra charge)
+          </td>
+        </tr>
+
+        <tr>
+          <td>White pizza</td>
+          <td> Itailian blend of oil, grated cheese, fresh tomato, itailian spices, provolone & mozzarella
+            cheese
+          </td>
+        </tr>
+
+        <tr>
+          <td>Southwest BBQ pizza</td>
+          <td> Beef or chicken, bbq sauce, bacon, mozzarella cheese</td>
+        </tr>
+
+        <tr>
+          <td>Five Cheese pizza</td>
+          <td> Mozzarella, ricotta, provolone, grated cheese, asiago blended with our signature oil</td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+  <!-- Regular Pizza Menu -->
+  <div class="slide fade">
+    <h1 class="title text-center">PIZZA</h1>
+    <img src="images/pizza.jpg">
+
+    <div class="menu-item">
+      <h4 class="text-center title"><u>Thin Or Original Crust</u></h4>
+      <table>
+        <!-- Small Pizza -->
+        <tr>
+          <td colspan="2">Small 12"</td>
+          <td>$8.00</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Extra Items</td>
+          <td>$1.00</td>
+        </tr>
+
+        <!-- Medium Pizza -->
+        <tr>
+          <td colspan="2">Medium 16"</td>
+          <td>$10.00</td>
+        </tr>
+        <tr class="menu-note">
+          <td></td>
+          <td>Extra Items</td>
+          <td>$1.50</td>
+        </tr>
+
+        <!-- Large Pizza -->
+        <tr>
+          <td colspan="2">Large 16"</td>
+          <td>$12.00</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Extra Items</td>
+          <td>$2.00</td>
+        </tr>
+
+        <!-- Party Pizza -->
+        <tr>
+          <td colspan="2">Party Pizza (24 Slices)</td>
+          <td>$15.00</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Extra Items</td>
+          <td>$2.25</td>
+        </tr>
+      </table>
+
+      <h3 class="menu-footer">
+        <u>Extras</u>:
+        Pepperoni &#9679;
+        Double Cheese &#9679;
+        Mushrooms &#9679;
+        Onions &#9679;
+        Green Olives &#9679;
+        Black Olives &#9679;
+        Green Peppers &#9679;
+        Hot Peppers &#9679;
+        Meatballs &#9679;
+        Sausage &#9679;
+        Ham &#9679;
+        Tomato &#9679;
+        Bacon&#9679;
+        Cheddar &#9679;
+        Pineapple &#9679;
+        Broccoli &#9679;
+        Anchovies &#9679;
+        Spinach
+      </h3>
+    </div>
+  </div>
+
+  <!-- Fat Bellie Sandwhiches -->
+  <div class="slide fade">
+    <h1 class="title text-center">Fat Bellie Sandwhiches</h1>
+
+    <img src="images/fatbellie.jpg"/>
+
+    <div class="menu-item">
+      <table class="price-table">
+        <tr>
+          <td class="text-center">Small</td>
+          <td  class="text-center">$8.99</td>
+        </tr>
+        <tr>
+          <td class="text-center">Medium</td>
+          <td class="text-center">$13.99</td>
+        </tr>
+      </table>
+      <h4 class="text-center title">Our homemade dough baked into a pocket sandwhich</h4>
+
+
+      <table>
+        <tr>
+          <td>Cheeseburger</td>
+          <td> Ground beef, bacon, tomato, onion, ketchup, mayo, lettuce</td>
+        </tr>
+
+        <tr>
+          <td>Turkey Club</td>
+          <td> Turkey, bacon, ranch, tomato, onion, lettuce, special sauce</td>
+        </tr>
+
+        <tr>
+          <td>Philly Cheese Steak</td>
+          <td> Roast beef, with pepper and onions</td>
+        </tr>
+
+        <tr>
+          <td>Taco</td>
+          <td> Meat, cheese, lettuce, tomato, onion</td>
+        </tr>
+
+        <tr>
+          <td>Italian</td>
+          <td> Ham, salami, provolone, american, lettuce, tomato, onion, mayo</td>
+        </tr>
+
+        <tr>
+          <td>Buffalo Wing</td>
+          <td> chicken tenders, buffalo sauce, blue cheese, lettuce, tomato, onion</td>
+        </tr>
+
+        <tr>
+          <td>Rodeo</td>
+          <td> Hamburger, american cheese, mozzarella, onion rings, honey bbq sauce</td>
+        </tr>
+      </table>
+
+      
+
+    </div>
+  </div>
+
+  <!-- Stromboli's -->
+  <div class="slide fade">
+    <h1 class="title text-center">Stromboli's</h1>
+
+    <img src="images/stromboli.jpg">
+
+    <div class="menu-item">
+      <table class="price-table">
+        <tr>
+          <td class="text-center">Small</td>
+          <td  class="text-center">$8.99</td>
+        </tr>
+        <tr>
+          <td class="text-center">Medium</td>
+          <td class="text-center">$10.99</td>
+        </tr>
+        <tr>
+          <td class="text-center">Large</td>
+          <td class="text-center">$12.99</td>
+        </tr>
+      </table>
+      <h4 class="text-center title"></h4>
+
+
+      <table>
+        <tr>
+          <td>Chicken Spinach Calzone*</td>
+          <td> Chicken, blended cheeses, alfredo sauce, spinach</td>
+        </tr>
+
+        <tr>
+          <td>Lasagna Calzone</td>
+          <td> Meatballs, sauce, ricotta, & mozzarella cheese</td>
+        </tr>
+
+        <tr>
+          <td>Stromboli Roll*</td>
+          <td> Ham, salami, cheese, sauce</td>
+        </tr>
+
+        <tr>
+          <td>Sausage Roll</td>
+          <td> Sausage, green peppers, onions, chesse, sauce</td>
+        </tr>
+
+        <tr>
+          <td>Pizza Roll</td>
+          <td> Pepperoni, cheese, sauce</td>
+        </tr>
+
+        <tr>
+          <td>Chicken Wing*</td>
+          <td> Chicken tenders, shaken in hot sauce, & cheese</td>
+        </tr>
+
+        <tr>
+          <td>Chicken Broccoli*</td>
+          <td> Chicken tenders, broccoli, cheese, ranch dressing</td>
+        </tr>
+
+        <tr>
+          <td>Cheese Calzone</td>
+          <td> Ricotta, & mozzarella cheese, sauce</td>
+        </tr>
+      </table>
+
+      <div class="menu-footer">
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Chicken Wings -->
+  <div class="slide fade">
+    <h1 class="title text-center">CHICKEN WINGS</h1>
+
+    <img src="images/wings.jpg" >
+
+
+    <div class="menu-item">
+      <table class="price-table">
+        <tr>
+          <td class="text-center">Half (6)</td>
+          <td  class="text-center">$5.29</td>
+        </tr>
+        <tr>
+          <td class="text-center">Single (10)</td>
+          <td class="text-center">$8.79</td>
+        </tr>
+        <tr>
+          <td class="text-center">Double (20)</td>
+          <td class="text-center">$16.99</td>
+        </tr>
+        <tr>
+          <td class="text-center">Triple (30)</td>
+          <td class="text-center">$22.99</td>
+        </tr>
+        <tr>
+          <td class="text-center">Bucket (40)</td>
+          <td class="text-center">$29.99</td>
+        </tr>
+        <tr>
+          <td colspan="2">*all orders include blue cheese & celery*</td>
+        </tr>
+        <tr>
+          <td colspan="2">*extra blue cheese $0.60*</td>
+        </tr>
+      </table>
+
+      <h3 class="menu-footer">
+        <u>Flavors</u>:
+        Hot,
+        Medium,
+        Mild,
+        Lemon Pepper,
+        Cajun,
+        Butter Garlic,
+        BBQ,
+        Honey Mustard,
+        Honey BBQ,
+        Gold Fever,
+        Jamaican Jerk, Salsa Chili
+      </h3>
+    </div>
+  </div>
+
+  <!-- Sides -->
+  <div class="slide fade">
+    <h1 class="title text-center">SIDES</h1>
+
+    <img src="images/sides.jpg" >
+
+
+    <div class="menu-item">
+      <table class="price-table">
+        <tr>
+          <td>slices (lunch only)</td>
+          <td>$1.99</td>
+        </tr>
+        <tr>
+          <td>french fries</td>
+          <td>$2.99</td>
+        </tr>
+        <tr>
+          <td>bacon & cheddar fries</td>
+          <td>$7.59</td>
+        </tr>
+        <tr>
+          <td>onion rings</td>
+          <td>$4.99</td>
+        </tr>
+        <tr>
+          <td>mozzarella sticks</td>
+          <td>$5.29</td>
+        </tr>
+        <tr>
+          <td>fried mushrooms</td>
+          <td>$6.59</td>
+        </tr>
+        <tr>
+          <td>waffle fries</td>
+          <td>$3.99</td>
+        </tr>
+        <tr>
+          <td>pizza logs (4)</td>
+          <td>$5.99</td>
+        </tr>
+        <tr>
+          <td>cinnamon poppers</td>
+          <td>$3.59</td>
+        </tr>
+        <tr>
+          <td>bread sticks</td>
+          <td>$3.79</td>
+        </tr>
+        <tr>
+          <td>cheesy bread sticks</td>
+          <td>$5.99</td>
+        </tr>
+        <tr>
+          <td>chicken basket</td>
+          <td>$7.59</td>
+        </tr>
+        <tr>
+          <td>chicken tenders (5)</td>
+          <td>$7.59</td>
+        </tr>
+        <tr>
+          <td>mini tacos (12)</td>
+          <td>$4.99</td>
+        </tr>
+        <tr>
+          <td>sweet potato fries</td>
+          <td>$3.99</td>
+        </tr>
+        <tr>
+          <td>pizza dunkers</td>
+          <td>$7.29</td>
+        </tr>
+        <tr>
+          <td>boneless wings (10)</td>
+          <td>$6.99</td>
+        </tr>
+        <tr>
+          <td>boneless wings (20)</td>
+          <td>$12.99</td>
+        </tr>
+      </table>
+
+      
+    </div>
+  </div>
+
+  <!-- Salads -->
+  <div class="slide fade">
+    <h1 class="title text-center">SALADS</h1>
+
+
+    <div class="menu-item">
+      <table class="price-table">
+        <tr>
+          <td>Small</td>
+          <td>$6.99</td>
+        </tr>
+        <tr>
+          <td>Large</td>
+          <td>$9.99</td>
+        </tr>
+      </table>
+
+      <h3 class="title text-center">All Salads Made Fresh to Order</h3>
+
+      <table>
+        <tr>
+          <td>Taco Salad</td>
+          <td>Taco meat, cheddar, mozzarella cheese, served with lettuce, onion, tomato, black olives & hot sauce</td>
+        </tr>
+        <tr>
+          <td>Chef Salad</td>
+          <td>Ham, turkey, cheddar, lettuce, onion, tomato, choice of ranch, blue cheese, or oil dressing</td>
+        </tr>
+        <tr>
+          <td>Chicken Wing Salad</td>
+          <td>Chicken tenders shaken in hot sauce, lettuce, tomato, onion, served with blue cheese & celery</td>
+        </tr>
+        <tr>
+          <td>Tossed Salad</td>
+          <td>Lettuce, Tomato, Pepperoni, Cheddar & Mozzarella Cheese</td>
+        </tr>
+      </table>
+      
+    </div>
+  </div>
+
+  <center>
+    <a class="prev" onclick="plusSlides(-1)">Back</a>
+    <a class="next" onclick="plusSlides(1)">Next</a>
+  </center>
+
+</div>
+
+<!---Footer---->
+<footer>
+  Pizza For Pyros &copy; 2017 All Rights Reserved.
+</footer>
+</body>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slide");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+</html>
